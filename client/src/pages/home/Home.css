@@ -1,0 +1,106 @@
+.home{
+    display: flex;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading{
+    font-size: 30px;
+    font-family: 'Lora', serif;
+}
+.homeButton{
+    margin-top: 35px;
+    width: 250px;
+    align-self: center; /*Using align-self to center sice it is only one item we are not using align-items because there is nothing inside*/
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    color:white;
+    background-color: teal;
+    cursor:pointer;
+    font-size: 16px;
+    font-family: 'Varela Round', serif;
+}
+
+.smallHomeButton{
+    margin-top: 25px;
+    width: 150px;
+    align-self: center; /*Using align-self to center sice it is only one item we are not using align-items because there is nothing inside*/
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    color:white;
+    background-color: teal;
+    cursor:pointer;
+    font-size: 16px;
+    font-family: 'Varela Round', serif;
+}
+
+.headerTitle{
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+.homeBody{
+    margin-top:auto;
+    margin-bottom: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+table.hometable{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+table, td, th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+th.homeBodyth{
+    height: 55px;
+    font-size: 25px;
+    padding:5px;
+    font-family: "Josefin Sans", sans-serif;
+}
+td.homeBodytr{
+    text-align: center;
+    height: 40px;
+    font-size: 18px;
+}
+a{
+    color: inherit;
+}
+.hometableBodyRow:hover{
+    background-color: rgb(241, 236, 236);
+}
+.hometableBodyRowElementName{
+    color: rgb(13, 133, 245);
+}
+.hometableBodyRow:hover .hometableBodyRowElementName a{
+    cursor:pointer;
+    text-decoration: rgb(13, 133, 245) underline !important;
+}
+
+@media screen and (max-width:480px){
+    .headerUser{
+        margin-top: 70px;
+        font-size: 35px;
+    }
+    .homeBody{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    table.hometable{
+        margin-top: 20px;
+    }
+}
