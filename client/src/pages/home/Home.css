@@ -14,6 +14,86 @@
     font-size: 30px;
     font-family: 'Lora', serif;
 }
+
+.homeForm{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.radiusRadioGroup{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.radiusRadioGroup > input{
+    margin-left: 15px;
+}
+.radiusRadioGroup > label{
+    margin-left: 10px;
+}
+.homeForm > label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.radiusYesInput{
+    /*color: gray;*/
+    margin: 10px 0 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 250px;
+}
+.coorRadioGroup{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.coorRadioGroup > input{
+    margin-left: 15px;
+}
+.coorRadioGroup > label{
+    margin-left: 10px;
+}
+.coorYesInput{
+    margin: 10px 0 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 250px;
+}
+.subHeading{
+    margin-top: 20px;
+    font-family: 'Varela Round', serif;
+    font-size: 17px;
+}
+
+.coorNoResponseHeading{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+.coorNoResponse{
+    margin-top: 5px;
+}
+.errorMessage{
+    margin-top: 5px;
+    color: red;
+    font-size: 17px;
+}
+
+.submitButton{
+    margin-top: 35px;
+    width: 250px;
+    align-self: center; /*Using align-self to center sice it is only one item we are not using align-items because there is nothing inside*/
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    color:white;
+    background-color: teal;
+    cursor:pointer;
+    font-size: 16px;
+    font-family: 'Varela Round', serif;
+}
 .homeButton{
     margin-top: 35px;
     width: 250px;
