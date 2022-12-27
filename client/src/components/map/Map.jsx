@@ -8,7 +8,7 @@ export default function Map({center, zoom, places}){
     // Important! Always set the container height explicitly
     <div style={{ height: '1000px', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyC6RbnlafJAYStF6FguiskTgipJfBp6pW4" }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_PLACES_API_KEY }}
         defaultCenter={center}
         defaultZoom={zoom}
       >
