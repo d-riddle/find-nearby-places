@@ -1,7 +1,8 @@
 import { useState } from "react";
+import Map from "../../components/map/Map";
 import { axiosInstance } from "../../config";
 import "./Home.css";
-
+// import {GoogleMap, useLoadScript, Marker, InfoWindow} from"@react-google-maps/api";
 
 
 function Home(){
@@ -17,6 +18,19 @@ function Home(){
 
     const [showRadiusInput,setShowRadiusInput]=useState(null);
     const [showCoorInput,setShowCoorInput]=useState(null);
+
+    // const {isLoaded, loadError}=useLoadScript({
+    //     googleMapsApiKey: "AIzaSyChIV0PG1jDYaAXevQpXa8lIhNI1wN5sGU"
+    // });
+     
+    const mapContainerStyle={
+        width: "700px",
+        hieght: "700px"
+    };
+    const center={
+        lat: 43.653,
+        lng: -79.383
+    }
     // const [coorStatus,setCoorStatus]=useState(null);
     // const [places,setPlaces]=useState([]);
     // const [backendStatus,setBackendStatus]=useState(null);
@@ -153,6 +167,8 @@ function Home(){
             }
         }
         console.log(showSmallButton);
+        // console.log(isLoaded);
+        // console.log(loadError);
     }
 
 
@@ -217,6 +233,9 @@ function Home(){
                         ))}
                     </tbody>
                 </table>
+            </div>
+            <div>
+                <Map center={{lat:lattitude,lng:longitude}} zoom={8} places={places}/>
             </div>
             </>):(<p className="errorMessage">{errorMessage}</p>)}
                 {/* <button className="homeButton" onClick={handleSelectOption} id="option1">Provide Coordinates</button>

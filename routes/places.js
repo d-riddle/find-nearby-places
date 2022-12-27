@@ -34,7 +34,7 @@ const isValid=(param)=>{
 router.post("/",async(req,res)=>{
     console.log("we reached");
     const loc=req.body.lattitude+"%2C"+req.body.longitude;
-    const radius=isValid(req.body.radius)?req.body.radius:50;
+    const radius=isValid(req.body.radius)?req.body.radius:100;
     console.log(loc);
     console.log(radius);
     console.log(process.env.PLACES_API_KEY);
@@ -70,7 +70,8 @@ let allowedTypesSet=new Set(allowedTypes);
                     filteredResponse.push({
                         icon:place.icon,
                         name:place.name,
-                        location: place.geometry.location.lat+":"+place.geometry.location.lng,
+                        lattitude: place.geometry.location.lat,
+                        longitude: place.geometry.location.lng,
                         types:place.types,
                         dist: calculateDistance(place.geometry.location.lat,place.geometry.location.lng,req.body.lattitude,req.body.longitude),
                         address: place.vicinity
