@@ -199,6 +199,7 @@ function Home(){
         setComparePlacesError("");
         const fuseOptions={
             includeScore: true,
+            ignoreLocation: true,
             keys:["placeName"]
         }
         try{
@@ -312,8 +313,8 @@ function Home(){
                             <td className="homeBodytr">{comparePlaceResult.gMapsPlace.name}</td>
                             <td className="homeBodytr">{(comparePlaceResult.mapMyIndiaSuggestions&&comparePlaceResult.mapMyIndiaSuggestions.length>0)?(
                                 <>
-                                    {comparePlacesResult.mapMyIndiaSuggestions&&comparePlacesResult.mapMyIndiaSuggestions.map((el)=>(<>
-                                        <p>el.item.placeName</p>
+                                    {comparePlaceResult.mapMyIndiaSuggestions&&comparePlaceResult.mapMyIndiaSuggestions.map((el)=>(<>
+                                        <p>{el.item.placeName}</p>
                                     </>))}
                                 </>
                             ):(null)}</td>
