@@ -1,0 +1,560 @@
+{
+    "suggestedLocations": [
+        {
+            "distance": 71,
+            "eLoc": "FQH68R",
+            "keywords": [
+                "FODCOF"
+            ],
+            "orderIndex": 1,
+            "placeAddress": "Bagmane World Technology Centre, KR Puram, Marathahalli Outer Ring Road, Service Road, Mahadevapura, Bengaluru, Karnataka, 560048",
+            "placeName": "Cafe Coffee Day, Bagmane WTC",
+            "type": "POI"
+        },
+        {
+            "distance": 75,
+            "eLoc": "8KZMBX",
+            "keywords": [
+                "FODTEA"
+            ],
+            "orderIndex": 2,
+            "placeAddress": "Bagmane World Technology Center, Mahadevapura, Bengaluru, Karnataka, 560048",
+            "placeName": "Chaayos",
+            "type": "POI"
+        },
+        {
+            "distance": 123,
+            "eLoc": "QS4HHK",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 3,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Gowdas Hotel",
+            "type": "POI"
+        },
+        {
+            "distance": 171,
+            "eLoc": "GZUI9U",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 4,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Coorgies Pork Hotel",
+            "type": "POI"
+        },
+        {
+            "distance": 171,
+            "eLoc": "QJNTAZ",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 5,
+            "placeAddress": "Bagmane World Technology Center, Bengaluru, Karnataka, 560037",
+            "placeName": "Anupama",
+            "type": "POI"
+        },
+        {
+            "distance": 174,
+            "eLoc": "WBJ5HV",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 6,
+            "placeAddress": "Opposite EMC-2, 2nd Floor, Above Nexa Showroom, Outer Ring Road, Mahadevapura, Marathahalli, Bengaluru, Karnataka, 560037",
+            "placeName": "Chulha Chauki Da Dhaba, Marathahalli",
+            "type": "POI"
+        },
+        {
+            "distance": 175,
+            "eLoc": "1EE2FS",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 7,
+            "placeAddress": "No 6, Doddanerkkundi, Outer Ring Road, Mahapura Post, Bengaluru, Karnataka, 560037",
+            "placeName": "Andhra Mess",
+            "type": "POI"
+        },
+        {
+            "distance": 176,
+            "eLoc": "NUBO1E",
+            "keywords": [
+                "FODPUB"
+            ],
+            "orderIndex": 8,
+            "placeAddress": "62/02, 4th Floor, Doddanekkundi, Outer Ring Road, Marathahalli, Near Nexa ORR Marathahalli, Bengaluru, Karnataka, 560037",
+            "placeName": "Gillys Resto Bar",
+            "type": "POI"
+        },
+        {
+            "distance": 178,
+            "eLoc": "MS705R",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 9,
+            "placeAddress": "62/2, 1st Floor, Mahadevapura, Outer Ring Road, Near Nexa Car Showroom, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "The South Rasoi",
+            "type": "POI"
+        },
+        {
+            "distance": 181,
+            "eLoc": "LB9WSC",
+            "keywords": [
+                "FODBAK"
+            ],
+            "orderIndex": 10,
+            "placeAddress": "Opposite EMC 2, Outer Ring Road, Doddanekundi, Mahadevpura, Marathahalli, Bengaluru, Karnataka, 560037",
+            "placeName": "Frosting Flavours",
+            "type": "POI"
+        },
+        {
+            "distance": 183,
+            "eLoc": "ITCKLC",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 1,
+            "placeAddress": "Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Chulha Chauki Da Dhaba",
+            "type": "POI"
+        },
+        {
+            "distance": 239,
+            "eLoc": "6Q6TDQ",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 2,
+            "placeAddress": "Outer Ring Road, Mahadevpura, Bengaluru, Karnataka, 560037",
+            "placeName": "Green Hot and Cool",
+            "type": "POI"
+        },
+        {
+            "distance": 250,
+            "eLoc": "PGTP3O",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 3,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Spice Garden",
+            "type": "POI"
+        },
+        {
+            "distance": 252,
+            "eLoc": "I1DGW7",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 4,
+            "placeAddress": "Outer Ring Road, Marathahalli, Bengaluru, Karnataka, 560037",
+            "placeName": "Sri Durgamba Hotel",
+            "type": "POI"
+        },
+        {
+            "distance": 257,
+            "eLoc": "WBJ5GC",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 5,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Gongura Kitchen",
+            "type": "POI"
+        },
+        {
+            "distance": 263,
+            "eLoc": "FVHD31",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 6,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Jaswanth Cool and Hot Point",
+            "type": "POI"
+        },
+        {
+            "distance": 277,
+            "eLoc": "N47TJS",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 7,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Bismillah Biryani Point",
+            "type": "POI"
+        },
+        {
+            "distance": 281,
+            "eLoc": "PGTOYE",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 8,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Swagruha Andhra Mess",
+            "type": "POI"
+        },
+        {
+            "distance": 284,
+            "eLoc": "R6553Q",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 9,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Selvam Hotel",
+            "type": "POI"
+        },
+        {
+            "distance": 287,
+            "eLoc": "063QXM",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 10,
+            "placeAddress": "Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Green Leaf Restaurant",
+            "type": "POI"
+        },
+        {
+            "distance": 295,
+            "eLoc": "FCBF2S",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 1,
+            "placeAddress": "Outer Ring Road, Mahadevpura, Bengaluru, Karnataka, 560037",
+            "placeName": "Kaveri Donne Biryani",
+            "type": "POI"
+        },
+        {
+            "distance": 297,
+            "eLoc": "K97VON",
+            "keywords": [
+                "FODFFD"
+            ],
+            "orderIndex": 2,
+            "placeAddress": "Counter No 5, Ground Floor, Onyx Food Court, Bagmane World Technology Center, Outer Ring Road, Laxmi Sagar Layout, Mahadevapura, Bengaluru, Karnataka, 560048",
+            "placeName": "Subway, Onyx",
+            "type": "POI"
+        },
+        {
+            "distance": 298,
+            "eLoc": "K984OZ",
+            "keywords": [
+                "FODPLZ"
+            ],
+            "orderIndex": 3,
+            "placeAddress": "Bagmane World Technology Center, Outer Ring Road, Laxmi Sagar Layout, Mahadevapura, Bengaluru, Karnataka, 560048",
+            "placeName": "Onyx Food Court",
+            "type": "POI"
+        },
+        {
+            "distance": 299,
+            "eLoc": "JLN48U",
+            "keywords": [
+                "FODPLZ"
+            ],
+            "orderIndex": 4,
+            "placeAddress": "Bagmane World Technology Center, KR Puram, Marathahalli Outer Ring Road, Service Road, Mahadevapura, Bengaluru, Karnataka, 560048",
+            "placeName": "Food Court",
+            "type": "POI"
+        },
+        {
+            "distance": 303,
+            "eLoc": "MS6VGY",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 5,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Kerala Kitchen",
+            "type": "POI"
+        },
+        {
+            "distance": 304,
+            "eLoc": "K9881L",
+            "keywords": [
+                "FODOTL"
+            ],
+            "orderIndex": 6,
+            "placeAddress": "Onyx Food Court, Bagmane World Technology Center, Outer Ring Road, Laxmi Sagar Layout, Bengaluru, Karnataka, 560048",
+            "placeName": "Hunan Express",
+            "type": "POI"
+        },
+        {
+            "distance": 304,
+            "eLoc": "K97QKT",
+            "keywords": [
+                "FODCOF"
+            ],
+            "orderIndex": 7,
+            "placeAddress": "Bagmane Technology Center, Outer Ring Road, Doddanekundi, Mahadevpura, Bengaluru, Karnataka, 560048",
+            "placeName": "Cafe Coffee Day, Bagmane Technology Center",
+            "type": "POI"
+        },
+        {
+            "distance": 305,
+            "eLoc": "MBPYZK",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 8,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Hotel Atithi Nati Style",
+            "type": "POI"
+        },
+        {
+            "distance": 307,
+            "eLoc": "K98BAG",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 9,
+            "placeAddress": "Onyx Food Court, Bagmane World Technology Center, Outer Ring Road, Laxmi Sagar Layout, Bengaluru, Karnataka, 560048",
+            "placeName": "Adyar Ananda Bhavan",
+            "type": "POI"
+        },
+        {
+            "distance": 334,
+            "eLoc": "H3RYA9",
+            "keywords": [
+                "FODFFD"
+            ],
+            "orderIndex": 10,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Deepak Fast Food",
+            "type": "POI"
+        },
+        {
+            "distance": 341,
+            "eLoc": "XYTWRB",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 1,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Bangalore Tiffins",
+            "type": "POI"
+        },
+        {
+            "distance": 350,
+            "eLoc": "61Y510",
+            "keywords": [
+                "FODFFD"
+            ],
+            "orderIndex": 2,
+            "placeAddress": "Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "NH47 Kerala Kitchen",
+            "type": "POI"
+        },
+        {
+            "distance": 353,
+            "eLoc": "5IB2UN",
+            "keywords": [
+                "FODCOF"
+            ],
+            "orderIndex": 3,
+            "placeAddress": "Service Road, B Chinappa Layout, Mahadevapura, Doddanekkundi, Bengaluru, Karnataka, 560048",
+            "placeName": "Cafe Coffee Day, Doddanekkundi",
+            "type": "POI"
+        },
+        {
+            "distance": 353,
+            "eLoc": "CHBBN7",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 4,
+            "placeAddress": "34/3 Outer Ring Road, Near Total Mall, Bengaluru, Karnataka, 560037",
+            "placeName": "Om Shakti Naidu Hotel Restaurant",
+            "type": "POI"
+        },
+        {
+            "distance": 354,
+            "eLoc": "ON3PAT",
+            "keywords": [
+                "RTSKRN"
+            ],
+            "orderIndex": 5,
+            "placeAddress": "Bagmane World Technology Center, Mahadevapura, Bengaluru, Karnataka, 560048",
+            "placeName": "Kirana Store",
+            "type": "POI"
+        },
+        {
+            "distance": 356,
+            "eLoc": "5Y2PGM",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 6,
+            "placeAddress": "115, Chinappa Layout, Laxmi Sagar Layout, Mahadevapura, Bengaluru, Karnataka, 560048",
+            "placeName": "Biriyani Mane",
+            "type": "POI"
+        },
+        {
+            "distance": 357,
+            "eLoc": "B4K5GB",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 7,
+            "placeAddress": "Outer Ring Road, Mahadevpura, Bengaluru, Karnataka, 560037",
+            "placeName": "Mayur Garden",
+            "type": "POI"
+        },
+        {
+            "distance": 360,
+            "eLoc": "18IS9N",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 8,
+            "placeAddress": "Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "The Blunch",
+            "type": "POI"
+        },
+        {
+            "distance": 364,
+            "eLoc": "GW10HB",
+            "keywords": [
+                "FODPUB"
+            ],
+            "orderIndex": 9,
+            "placeAddress": "38/3, Opposite EMC 2, Doddanekkundi ORR, Marathahalli, Bengaluru, Karnataka, 560037",
+            "placeName": "The Mint Resto Bar",
+            "type": "POI"
+        },
+        {
+            "distance": 367,
+            "eLoc": "C42DNL",
+            "keywords": [
+                "FODPUB"
+            ],
+            "orderIndex": 10,
+            "placeAddress": "No 32 33, Opposite Emc Doddanakundi, Outer Ring Road, Bengaluru, Karnataka, 560037",
+            "placeName": "Callista Bar and Kitchen",
+            "type": "POI"
+        },
+        {
+            "distance": 369,
+            "eLoc": "F88WOJ",
+            "keywords": [
+                "FODPUB"
+            ],
+            "orderIndex": 1,
+            "placeAddress": "38/3, Doddankundi ORR, Marathahalli, Bengaluru, Karnataka, 560037",
+            "placeName": "BLR37 Bar and Kitchen",
+            "type": "POI"
+        },
+        {
+            "distance": 371,
+            "eLoc": "3GY9KU",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 2,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Hotel Colour Full",
+            "type": "POI"
+        },
+        {
+            "distance": 373,
+            "eLoc": "D7T4S5",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 3,
+            "placeAddress": "Outer Ring Road, Mahadevpura, Bengaluru, Karnataka, 560037",
+            "placeName": "Prasnna Anjaneya Andhra Mess",
+            "type": "POI"
+        },
+        {
+            "distance": 374,
+            "eLoc": "U2V9LT",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 4,
+            "placeAddress": "Ground Floor, Outer Ring Road, Doddanekundi Village, Mahadevpura, KR Puram Hobli, Bengaluru, Karnataka, 560037",
+            "placeName": "99Foods",
+            "type": "POI"
+        },
+        {
+            "distance": 374,
+            "eLoc": "3UKENR",
+            "keywords": [
+                "FODPUB"
+            ],
+            "orderIndex": 5,
+            "placeAddress": "Ground Floor, Outer Ring Road, Doddanekundi Village, Mahadevpura, KR Puram Hobli, Bengaluru, Karnataka, 560037",
+            "placeName": "Ashwini Bar and Restaurant",
+            "type": "POI"
+        },
+        {
+            "distance": 375,
+            "eLoc": "KEHYQ7",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 6,
+            "placeAddress": "MN Krishnarao Road, Doddanekundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Puttaswamy Goudru Hotel",
+            "type": "POI"
+        },
+        {
+            "distance": 376,
+            "eLoc": "PGTOQ0",
+            "keywords": [
+                "FODOTH"
+            ],
+            "orderIndex": 7,
+            "placeAddress": "Near Total Mall, Ring Road, Doodnakundi, Bengaluru, Karnataka, 560037",
+            "placeName": "Kakaji",
+            "type": "POI"
+        },
+        {
+            "distance": 377,
+            "eLoc": "JZFJTF",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 8,
+            "placeAddress": "Garudachar Palya, Mahadevapura, Whitefield, Bengaluru, Karnataka, 560037",
+            "placeName": "Foody Baba",
+            "type": "POI"
+        },
+        {
+            "distance": 378,
+            "eLoc": "BKQ50R",
+            "keywords": [
+                "FODIND"
+            ],
+            "orderIndex": 9,
+            "placeAddress": "Next to Total Mall, Outer Ring Road, Marathahalli, Bengaluru, Karnataka, 560037",
+            "placeName": "Abhiruchi Andhra Hotel",
+            "type": "POI"
+        },
+        {
+            "distance": 399,
+            "eLoc": "E8O42P",
+            "keywords": [
+                "RCNCIN"
+            ],
+            "orderIndex": 10,
+            "placeAddress": "5th Floor, Soul Space Arena Mall, Outer Ring Road, Doddanekundi, Mahadevapura, Bengaluru, Karnataka, 560037",
+            "placeName": "PVR INOX",
+            "type": "POI"
+        }
+    ],
+    "pageInfo": {
+        "pageCount": 1,
+        "totalHits": 41962,
+        "totalPages": 4197,
+        "pageSize": 10
+    }
+}

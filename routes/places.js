@@ -79,12 +79,17 @@ let allowedTypesSet=new Set(allowedTypes);
                 }
             }
             filteredResponse.sort((a,b)=>a.dist-b.dist);
+            console.log("backend map success");
+            console.log(filteredResponse);
             res.status(200).json(filteredResponse);
         }else{
+            console.log("reached here");
+            console.log(apiResponse.data.message);
             res.status(500).json(apiResponse.data.status);
         }
     }catch(err){
         console.log(err);
+        console.log(err.message);
         if(err.response){
             console.log(err.response.data);
             res.status(500).json(err.response.data);

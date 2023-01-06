@@ -7,6 +7,7 @@ const path=require("path");
 const dotenv=require("dotenv");
 
 const placesRoute=require("./routes/places");
+const mapMyIndiaPlacesRoute=require("./routes/mapmyindiaplaces");
 
 dotenv.config();
 app.use(express.json());
@@ -18,6 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/api/places",placesRoute);
+app.use("/api/mapmyindiaplaces",mapMyIndiaPlacesRoute);
 
 if (process.env.NODE_ENV === 'production') {
     //*Set static folder up in production
