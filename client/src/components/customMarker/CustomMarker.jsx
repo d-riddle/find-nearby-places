@@ -1,10 +1,13 @@
+import { useState } from "react";
+import "./CustomMarker.css";
 
-function CustomMarker({text}){
-    return (
-        <div className="customMarker">
-            text
-        </div>
-    );
+function CustomMarker({place}){
+    return <>
+    {place.name}
+    <div className="pin">
+    </div>
+    <div className="pulse"></div>
+  </>
 }
 
 export default CustomMarker;

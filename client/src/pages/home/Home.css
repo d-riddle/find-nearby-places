@@ -170,6 +170,9 @@ a{
     cursor:pointer;
     text-decoration: rgb(13, 133, 245) underline !important;
 }
+.mapContainer {
+    width: 100%;
+}
 
 @media screen and (max-width:480px){
     .headerUser{

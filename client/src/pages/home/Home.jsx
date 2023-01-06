@@ -2,6 +2,7 @@ import { useState } from "react";
 import Map from "../../components/map/Map";
 import { axiosInstance } from "../../config";
 import "./Home.css";
+import Fuse from 'fuse.js'
 // import {GoogleMap, useLoadScript, Marker, InfoWindow} from"@react-google-maps/api";
 
 
@@ -13,11 +14,15 @@ function Home(){
     const [backendStatus,setBackendStatus]=useState(null);
     const [errorMessage,setErrorMessage]=useState(null);
     const [showLocation,setShowLocation]=useState(false);
-    const [places,setPlaces]=useState(null);
+    const [places,setPlaces]=useState([]);
     const [showSmallButton,setShowSmallButton]=useState(false);
 
     const [showRadiusInput,setShowRadiusInput]=useState(null);
     const [showCoorInput,setShowCoorInput]=useState(null);
+    const [mapIndiaPlaces,setMapIndiaPlaces]=useState([]);
+    const [mapIndiaError,setMapIndiaError]=useState(null);
+    const [comparePlacesResult,setComparePlacesResult]=useState([]);
+    const [comparePlacesError,setComparePlacesError]=useState("");
 
     // const {isLoaded, loadError}=useLoadScript({
     //     googleMapsApiKey: "AIzaSyChIV0PG1jDYaAXevQpXa8lIhNI1wN5sGU"
@@ -82,6 +87,24 @@ function Home(){
             setErrorMessage(err.response.data);
             setPlaces([]);
             setBackendStatus(null);
+        }
+    }
+    const callMapMyIndiaBackend=async()=>{
+        setMapIndiaError("");
+        setMapIndiaPlaces([]);
+        try{
+            const mapMyIndiaRes=await axiosInstance.get("/mapmyindiaplaces");
+            console.log(mapMyIndiaRes);
+            if(mapMyIndiaRes.status==200){
+                console.log(mapMyIndiaRes.data.suggestedLocations);
+                    setMapIndiaPlaces(mapMyIndiaRes.data.suggestedLocations);
+            }else{
+                setMapIndiaError("Error fetching data from mapmyindia");
+            }
+        }catch(err){
+            console.log("reached here");
+            setMapIndiaError("error occured!!!");
+            setMapIndiaPlaces([]);
         }
     }
 
@@ -171,6 +194,34 @@ function Home(){
         // console.log(loadError);
     }
 
+    const callComparePlaces=()=>{
+        setComparePlacesResult([]);
+        setComparePlacesError("");
+        const fuseOptions={
+            includeScore: true,
+            keys:["placeName"]
+        }
+        try{
+            console.log(mapIndiaPlaces);
+            const fuse=new Fuse(mapIndiaPlaces,fuseOptions);
+            console.log(places);
+            for(let place of places){
+                console.log(place.name);
+                console.log(place.address);
+                const temp=fuse.search(place.name);
+                console.log(temp);
+                const t1={mapMyIndiaSuggestions:[...temp],gMapsPlace:place}
+                console.log(t1);
+                setComparePlacesResult((prev)=>[...prev,t1]);
+            }
+        }catch(err){
+            console.log("Error occured in comparing places");
+            console.log(err);
+            setComparePlacesError("Error occured in comparing places");
+            setComparePlacesResult([]);
+        }
+    }
+
 
     return (
         <div className="home">
@@ -234,47 +285,48 @@ function Home(){
                     </tbody>
                 </table>
             </div>
-            <div>
-                <Map center={{lat:lattitude,lng:longitude}} zoom={8} places={places}/>
+            <div className="mapContainer">
+                <Map center={{lat:Number(lattitude),lng:Number(longitude)}} zoom={15} places={places}/>
             </div>
+            <button className="smallHomeButton" onClick={callMapMyIndiaBackend}>Load MapmyIndiaData</button>
+            {(mapIndiaPlaces&&mapIndiaPlaces.length)>0?(
+                <>
+                    {mapIndiaPlaces.map((mapmyindiaplace)=>(<><p>{mapmyindiaplace.placeName}</p></>))}
+                    <button className="smallHomeButton" onClick={callComparePlaces}>Compare Places</button>
+                    {(comparePlacesResult&&comparePlacesResult.length>0)?(
+                        <>
+                            <div className="headerTitle">
+                                [compare Place Result]
+                            </div>
+                            <div className="homeBody">
+                                <table className="homeTable">
+                                    <thead>
+                                        <tr>
+                                            <th className="homeBodyth">GMaps Place Name</th>
+                                            <th className="homeBodyth">MapMyIndia Matches</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {comparePlacesResult&&comparePlacesResult.map((comparePlaceResult)=>(
+                                            <tr className="homeTableBodyRow">
+                            <td className="homeBodytr">{comparePlaceResult.gMapsPlace.name}</td>
+                            <td className="homeBodytr">{(comparePlaceResult.mapMyIndiaSuggestions&&comparePlaceResult.mapMyIndiaSuggestions.length>0)?(
+                                <>
+                                    {comparePlacesResult.mapMyIndiaSuggestions&&comparePlacesResult.mapMyIndiaSuggestions.map((el)=>(<>
+                                        <p>el.item.placeName</p>
+                                    </>))}
+                                </>
+                            ):(null)}</td>
+                        </tr>))}                  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </>
+                    ):(<p className="errorMessage">{comparePlacesError}</p>)}
+                </>
+            ):(<p className="errorMessage">{mapIndiaError}</p>)}
             </>):(<p className="errorMessage">{errorMessage}</p>)}
-                {/* <button className="homeButton" onClick={handleSelectOption} id="option1">Provide Coordinates</button>
-                <button className="homeButton" onClick={handleSelectOption} id="option2">Find Current location</button>
-                {option2&&(option2?(<><p>{coorStatus}</p>
-                {lattitude&&longitude&&<p>Yours Coordinates are: </p>}
-                {lattitude&&<p>Lattitude: {lattitude}</p>}
-                {longitude&&<p>Longitude: {longitude}</p>}</>):(<>
-                    <label>Enter the Coordinates:</label>
-                    <input type="text" placeholder="Enter lattitude" onChange={(e)=>{setLattitude(e.target.value)}}/>
-                    <input type="text" placeholder="Enter longitude" onChange={(e)=>{setLongitude(e.target.value)}}/>
-                </>))}
-                {lattitude&&longitude&&<button className="smallHomeButton" onClick={getBusinesses}>Find Nearby Places</button>}
-                {<p>{progress}</p>}
-                    {(places&&places.length>0)?(<>
-                <div className='headerTitle'>
-                [Nearby Places]
-            </div>
-                    <div className='homeBody'>
-                <table className='hometable'>
-                    <thead>
-                        <tr>
-                            <th className='homeBodyth'>Icon</th>
-                            <th className='homeBodyth'>Name</th>
-                            <th className='homeBodyth'>Address</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {places&&places.map((p)=>(
-                            <tr className='hometableBodyRow'>
-                                <td className='homeBodytr'><img src={p.icon}/></td>
-                                <td className='homeBodytr'>{p.name}</td>
-                                <td className='homeBodytr'>{p.location}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-            </>):(<h1>{backendStatus}</h1>)}   */}
+
             </div>
         </div>
     );
